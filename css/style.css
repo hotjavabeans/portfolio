@@ -1,0 +1,147 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0 0 0 0;
+  list-style: disc;
+}
+
+/* Begin styling */
+:root {
+  --ff-primary: 'Lato', sans-serif;
+
+  --clr-primary-200: #f3eed9;
+  --clr-primary-400: #2b3618;
+
+  --clr-neutral-900: #222c2a;
+}
+
+body {
+  font-family: var(--ff-primary);
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.4em;
+  /* margin: 0 0 0.4em; */
+  font-weight: 700;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* .btn {
+  text-transform: uppercase;
+  font-weight: 700;
+  background: gold;
+  color: blue;
+  padding: 0.5rem 1rem;
+} */
+
+/* Layout */
+
+header,
+h2,
+p,
+img {
+  margin-bottom: 1em;
+}
+
+header,
+section {
+  padding: 0.5rem 0;
+}
+
+.wrapper {
+  margin-inline: auto;
+  /* width: 95%; */
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  /* border-bottom: 1px solid #d8d8d8; */
+  margin-inline: auto;
+  width: 95%;
+}
+
+header {
+  background: var(--clr-primary-400);
+  padding: 0.9rem 1.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 1.7rem;
+}
+
+.em-coffee {
+  align-self: center;
+}
+/* .heading::before {
+  content: '☕';
+} */
+
+.heading a {
+  color: var(--clr-primary-200);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.to_nav {
+  align-self: center;
+  color: var(--clr-primary-200);
+  background: #182b36;
+  padding: 0 0.6rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 2px;
+}
+
+a.to_nav:hover,
+a.to_nav:focus {
+  color: #1c1c1c;
+  background: #ccc;
+}
+
+/* navigation */
+.nav__list {
+  list-style: none;
+  background: var(--clr-primary-400);
+}
+
+.nav__link {
+  display: block;
+  color: var(--clr-primary-200);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 2em;
+  border-bottom: 1px dotted var(--clr-primary-200);
+  padding: 0 0 0 calc(1vw * 2.5);
